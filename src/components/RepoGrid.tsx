@@ -12,7 +12,7 @@ interface GitHubRepo {
   archived: boolean;
 }
 
-export default function RepoGrid(): JSX.Element {
+export default function RepoGrid() {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [loading, setLoading] = useState(true);
 

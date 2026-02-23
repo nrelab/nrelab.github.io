@@ -6,7 +6,7 @@ interface SectionProps {
   id?: string;
 }
 
-export default function Section({ children, className = '', id }: SectionProps): JSX.Element {
+export default function Section({ children, className = '', id }: SectionProps) {
   return (
     <section className={`py-20 ${className}`} id={id}>
       <div className="container">

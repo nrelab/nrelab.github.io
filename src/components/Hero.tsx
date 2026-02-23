@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
   return (
     <section className="text-center py-24">
       <h1 className="text-5xl font-semibold tracking-tight mb-6">

@@ -6,7 +6,7 @@ interface FeatureCardProps {
   icon: React.ReactNode;
 }
 
-export default function FeatureCard({ title, description, icon }: FeatureCardProps): JSX.Element {
+export default function FeatureCard({ title, description, icon }: FeatureCardProps) {
   return (
     <div className="card p-6 text-center hover:transform hover:-translate-y-1 transition-all duration-200">
       <div className="mb-4 flex justify-center">

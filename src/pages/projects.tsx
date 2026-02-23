@@ -13,7 +13,7 @@ interface GitHubRepo {
   archived: boolean;
 }
 
-export default function ProjectsPage(): JSX.Element {
+export default function ProjectsPage() {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

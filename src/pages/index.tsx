@@ -5,7 +5,7 @@ import RepoGrid from '../components/RepoGrid';
 import FeatureCard from '../components/FeatureCard';
 import Section from '../components/Section';
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const features = [
     {
       title: 'Security Research',
