@@ -1,0 +1,225 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8fafc;
+  --ifm-card-background-color: #ffffff;
+  --ifm-color-content: #1e293b;
+  --ifm-color-content-secondary: #64748b;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #dbeafe;
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.3);
+  --ifm-background-color: #0f172a;
+  --ifm-background-surface-color: #1e293b;
+  --ifm-card-background-color: #1e293b;
+  --ifm-color-content: #f1f5f9;
+  --ifm-color-content-secondary: #94a3b8;
+}
+
+/* Custom styles for NRELabs */
+.hero--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+/* Enhanced card styles */
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card__header {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.card__body {
+  padding: 1rem 1.5rem;
+}
+
+.card__footer {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: 1rem 1.5rem 1.5rem;
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* Language badge colors */
+.badge {
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Custom button styles */
+.button {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+/* Navigation improvements */
+.navbar {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Footer improvements */
+.footer {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Code block improvements */
+.codeBlock {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table improvements */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: none;
+}
+
+th {
+  background-color: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+/* Alert improvements */
+.alert {
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.alert--info {
+  border-left-color: var(--ifm-color-info);
+}
+
+.alert--warning {
+  border-left-color: var(--ifm-color-warning);
+}
+
+.alert--danger {
+  border-left-color: var(--ifm-color-danger);
+}
+
+.alert--success {
+  border-left-color: var(--ifm-color-success);
+}
+
+/* Responsive improvements */
+@media only screen and (max-width: 996px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Loading spinner */
+.spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-surface-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-400);
+}
