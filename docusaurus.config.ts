@@ -72,12 +72,14 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/nrelab-social-card.jpg',
     colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'NRELabs',
+      title: 'nrelab',
       logo: {
-        alt: 'NRELabs Logo',
+        alt: 'nrelab',
         src: 'img/logo.svg',
       },
       items: [
